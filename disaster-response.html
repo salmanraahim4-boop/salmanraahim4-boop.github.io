@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raahim Salman — AKU Integrated Disaster Preparedness & Response Program project." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Disaster Preparedness & Response | Raahim Salman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .project-page{
+      max-width:1318px;
+      width:calc(100% - 42px);
+      margin:62px auto 0;
+    }
+
+    .project-hero{
+      padding:42px;
+      border:1px solid #c9e2f5;
+      border-radius:32px;
+      background:linear-gradient(115deg,#ffffff 0%,#fbfdff 45%,#eef8ff 100%);
+      box-shadow:0 16px 38px rgba(18,53,91,.045);
+    }
+
+    .institution-row{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:24px;
+    }
+
+    .aku-logo{
+      width:135px;
+      height:135px;
+      object-fit:contain;
+      background:#fff;
+      border:1px solid #d7e8f4;
+      border-radius:18px;
+      padding:8px;
+    }
+
+    .institution-copy strong{
+      display:block;
+      color:#12355b;
+      font-size:20px;
+    }
+
+    .institution-copy span{
+      display:block;
+      margin-top:3px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    .project-kicker{
+      margin:0 0 12px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .project-hero h1{
+      max-width:1000px;
+      margin:0;
+      color:#12355b;
+      font-size:52px;
+      line-height:1.08;
+      letter-spacing:-.045em;
+    }
+
+    .project-lead{
+      max-width:970px;
+      margin:20px 0 0;
+      color:#637689;
+      font-size:18px;
+      line-height:1.75;
+    }
+
+    .project-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:27px;
+    }
+
+    .content-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:18px;
+      margin-top:22px;
+    }
+
+    .content-card{
+      padding:27px 28px;
+      border:1px solid #c9e2f5;
+      border-radius:24px;
+      background:#fff;
+    }
+
+    .content-card h2{
+      margin:0 0 14px;
+      color:#082f5e;
+      font-size:27px;
+      letter-spacing:-.03em;
+    }
+
+    .content-card p,
+    .content-card li{
+      color:#637689;
+      font-size:16px;
+      line-height:1.72;
+    }
+
+    .content-card p{
+      margin:0;
+    }
+
+    .content-card ul{
+      margin:0;
+      padding-left:21px;
+    }
+
+    .content-card li{
+      margin-bottom:8px;
+    }
+
+    .facts{
+      display:grid;
+      gap:8px;
+    }
+
+    .fact{
+      display:grid;
+      grid-template-columns:155px 1fr;
+      gap:15px;
+      padding:10px 0;
+      border-bottom:1px solid #e5f0f8;
+    }
+
+    .fact:last-child{border-bottom:0}
+
+    .fact strong{
+      color:#12355b;
+      font-size:14px;
+    }
+
+    .fact span{
+      color:#637689;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .training-section{
+      padding:56px 0 72px;
+    }
+
+    .training-section h2{
+      margin:4px 0 10px;
+      color:#082f5e;
+      font-size:42px;
+      letter-spacing:-.04em;
+    }
+
+    .training-intro{
+      max-width:820px;
+      margin:0 0 26px;
+      color:#637689;
+      font-size:16px;
+      line-height:1.7;
+    }
+
+    .training-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    .training-card{
+      padding:21px;
+      border:1px solid #c9e2f5;
+      border-radius:20px;
+      background:#f9fcfe;
+    }
+
+    .training-card h3{
+      margin:0 0 8px;
+      color:#12355b;
+      font-size:18px;
+    }
+
+    .training-card p{
+      margin:0;
+      color:#637689;
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .role-card{
+      margin-top:18px;
+      padding:23px 26px;
+      border:1px solid #c9e2f5;
+      border-radius:22px;
+      background:linear-gradient(120deg,#f8fcff,#eef8ff);
+    }
+
+    .role-card h2{
+      margin:0 0 10px;
+      color:#082f5e;
+      font-size:26px;
+    }
+
+    .role-card p{
+      margin:0;
+      color:#637689;
+      font-size:16px;
+      line-height:1.7;
+    }
+
+    @media(max-width:900px){
+      .content-grid,
+      .training-grid{
+        grid-template-columns:1fr;
+      }
+
+      .project-hero h1{
+        font-size:38px;
+      }
+
+      .fact{
+        grid-template-columns:1fr;
+        gap:3px;
+      }
+    }
+
+    @media(max-width:560px){
+      .project-page{
+        width:calc(100% - 28px);
+        margin-top:34px;
+      }
+
+      .project-hero{
+        padding:26px 22px;
+        border-radius:24px;
+      }
+
+      .institution-row{
+        align-items:flex-start;
+      }
+
+      .aku-logo{
+        width:92px;
+        height:92px;
+      }
+
+      .project-hero h1{
+        font-size:31px;
+      }
+
+      .project-lead{
+        font-size:16px;
+      }
+
+      .training-section h2{
+        font-size:34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html#home" aria-label="Raahim Salman home">RS</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="main-nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#experience">Research Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#training">Courses & Certifications</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="project-page">
+  <section class="project-hero">
+    <div class="institution-row">
+      <img class="aku-logo" src="assets/aku-logo.jpg" alt="The Aga Khan University logo" />
+      <div class="institution-copy">
+        <strong>The Aga Khan University</strong>
+        <span>Integrated Disaster Preparedness & Response Program</span>
+      </div>
+    </div>
+
+    <p class="project-kicker">PUBLIC HEALTH • DISASTER RESPONSE • HEALTHCARE WORKER TRAINING</p>
+
+    <h1>AKU Integrated Disaster Preparedness & Response Program</h1>
+
+    <p class="project-lead">
+      A 2024 healthcare-worker training program designed to strengthen the knowledge and practical skills of
+      physicians, nurses, and other district healthcare workers responding to disaster-affected populations.
+      The curriculum combines clinical teaching with hands-on activities, scenario-based learning, and structured evaluation.
+    </p>
+
+    <div class="project-actions">
+      <a class="button button-primary"
+         href="https://www.aku.edu/cete/programmes/Pages/disaster-response-initiatives.aspx"
+         target="_blank" rel="noopener">View AKU Disaster Response Initiative</a>
+      <a class="button button-secondary" href="index.html#projects">Back to Projects</a>
+    </div>
+  </section>
+
+  <section class="content-grid">
+    <article class="content-card">
+      <h2>Program in brief</h2>
+      <p>
+        The program focuses on healthcare needs during disasters and displacement, with training across trauma care,
+        communicable and non-communicable diseases, pediatric emergencies, psychological first aid, nursing care,
+        gender-based violence, adolescent health, and maternal and gynecological emergencies.
+      </p>
+    </article>
+
+    <article class="content-card">
+      <h2>Program at a glance</h2>
+      <div class="facts">
+        <div class="fact"><strong>Duration</strong><span>4.5 days, approximately 6 hours per day</span></div>
+        <div class="fact"><strong>Participants</strong><span>25–30 healthcare workers per session</span></div>
+        <div class="fact"><strong>Audience</strong><span>District physicians, nurses, and dispensers</span></div>
+        <div class="fact"><strong>Format</strong><span>Small-group discussion, case-based teaching, videos, role play, and hands-on activities</span></div>
+        <div class="fact"><strong>Assessment</strong><span>Pre/post knowledge testing, participant feedback, and instructor evaluation</span></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="role-card">
+    <h2>My contribution</h2>
+    <p>
+      Supported healthcare-worker training, data collection, pre/post evaluation, data validation,
+      analysis, reporting, research coordination, and study documentation as part of the program.
+    </p>
+  </section>
+
+  <section class="training-section">
+    <p class="section-kicker">CURRICULUM AREAS</p>
+    <h2>Training focus</h2>
+    <p class="training-intro">
+      The curriculum was structured around practical healthcare challenges likely to arise in disaster settings,
+      combining didactic learning with hands-on clinical and emergency-response activities.
+    </p>
+
+    <div class="training-grid">
+      <article class="training-card">
+        <h3>Trauma & Mass Casualty</h3>
+        <p>ABCDE trauma assessment, airway and cervical-spine management, hemorrhage control, injuries, triage, and disaster drills.</p>
+      </article>
+
+      <article class="training-card">
+        <h3>Adult Acute & Chronic Care</h3>
+        <p>Communicable diseases, common infections, asthma, hypertension, diabetes, skin conditions, hands-only CPR, and Stop the Bleed.</p>
+      </article>
+
+      <article class="training-card">
+        <h3>Pediatrics & Psychological First Aid</h3>
+        <p>Pediatric illness, malnutrition, neonatal emergencies, child abuse, self-care, grounding techniques, and psychological first aid.</p>
+      </article>
+
+      <article class="training-card">
+        <h3>Nursing & Gender-Based Violence</h3>
+        <p>Medication, wound and fracture-management skills, resilience, GBV screening and referral, and adolescent health.</p>
+      </article>
+
+      <article class="training-card">
+        <h3>Maternal & Gynecological Emergencies</h3>
+        <p>Disaster essential kits, care for pregnant and non-pregnant women, and maternal and newborn care.</p>
+      </article>
+
+      <article class="training-card">
+        <h3>Evaluation & Quality Improvement</h3>
+        <p>Formative assessment, scenario-based skills evaluation, pre/post knowledge assessment, feedback, and instructor evaluation.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo small">RS</span><span>Raahim Salman</span></div>
+    <p>Biostatistics • Health Data Analysis • Clinical Research</p>
+    <p>© <span id="year"></span> Raahim Salman</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
