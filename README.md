@@ -52,3 +52,9 @@ Your site will be available publicly at:
 `https://raahimsalman.github.io`
 
 Anyone can open it without a GitHub account.
+
+
+## v3 update
+- Expanded analytical tools card: R, SAS, SQL, Excel, SPSS, NVivo, EndNote, Overleaf.
+- Added Languages card: English (Fluent), Dutch (A2), Urdu (Native).
+- Included the uploaded CV in assets and connected the Open CV button to it.

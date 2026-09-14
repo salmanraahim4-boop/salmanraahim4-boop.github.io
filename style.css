@@ -116,7 +116,7 @@ button{
 }
 
 .hero{
-  min-height:510px;
+  min-height:610px;
   border:1px solid var(--border);
   border-radius:35px;
   background:
@@ -821,3 +821,14 @@ button{
     font-size:36px;
   }
 }
+
+
+/* v3 — expanded right-side information cards */
+.hero-stats{align-content:center;}
+.stat-card{min-height:102px;}
+.tools-card strong{font-size:28px;line-height:1.2;}
+.tools-card span{font-size:18px;line-height:1.35;}
+.languages-card strong{font-size:28px;}
+.languages-card span{font-size:17px;line-height:1.4;}
+@media(max-width:1100px){.hero-stats{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:820px){.hero-stats{grid-template-columns:1fr;}}
