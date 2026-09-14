@@ -1,56 +1,30 @@
-# Raahim Salman — Portfolio Website
+# Raahim Salman — Portfolio Website (Navy Theme)
 
-A responsive single-page portfolio built for GitHub Pages.
+This is the navy-blue themed version of your GitHub Pages portfolio.
 
-## 1. Personalize before publishing
+## How to update your live site
+
+1. Open your GitHub repository.
+2. Upload and replace these files:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+   - `assets/` folder (keep your own assets too)
+3. Commit the changes.
+4. Wait 1–2 minutes.
+5. Refresh your site.
+
+## Your live URL
+
+If your repository name matches your GitHub username, your site will remain live at:
+
+`https://salmanraahim4-boop.github.io`
+
+## Still personalize these placeholders
 
 Open `index.html` and replace:
-
 - `YOUR_EMAIL_HERE`
 - `YOUR_LINKEDIN_URL`
 - `YOUR_GITHUB_URL`
 
-You can also add a downloadable CV later by putting your PDF in the `assets` folder and adding a link such as:
-
-```html
-<a href="assets/Raahim_Salman_CV.pdf" download>Download CV</a>
-```
-
-## 2. Publish free with GitHub Pages
-
-### Recommended URL
-If your GitHub username is `raahimsalman`, create a repository named:
-
-`raahimsalman.github.io`
-
-Then:
-
-1. Sign in to GitHub.
-2. Create the repository `raahimsalman.github.io`.
-3. Upload `index.html`, `style.css`, `script.js` and the `assets` folder.
-4. Commit the files.
-5. Open **Settings → Pages**.
-6. Under **Build and deployment**, select **Deploy from a branch**.
-7. Choose the `main` branch and `/ (root)` folder.
-8. Save.
-
-Your public website will then be available at:
-
-`https://raahimsalman.github.io`
-
-Anyone can open the link without a GitHub account.
-
-## 3. Optional custom domain
-
-Later, you can connect a domain such as `raahimsalman.com` while keeping GitHub Pages as the free host.
-
-## Structure
-
-- Hero / introduction
-- About
-- Expertise
-- Selected projects
-- Research & publications
-- Experience
-- Toolkit
-- Contact
+You can also place your CV PDF in `assets/` and link it from the buttons later.
