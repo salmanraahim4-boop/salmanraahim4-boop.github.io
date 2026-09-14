@@ -36,3 +36,12 @@ Upload/replace these files in the existing repository:
 - assets/Raahim_Salman_Biostatistics_CV.docx
 
 Commit the changes and wait for the GitHub Pages deployment to complete.
+
+
+## v7 update
+The complete CV content remains in the website, but the first/hero page has been restored to the earlier preferred design:
+- large Raahim Salman heading
+- Biostatistician | Health Data Scientist | Clinical Researcher
+- short introductory paragraph
+- View Projects and Open CV buttons
+- four large right-side cards for publications, funded projects, tools, and languages
