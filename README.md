@@ -58,3 +58,7 @@ Anyone can open it without a GitHub account.
 - Expanded analytical tools card: R, SAS, SQL, Excel, SPSS, NVivo, EndNote, Overleaf.
 - Added Languages card: English (Fluent), Dutch (A2), Urdu (Native).
 - Included the uploaded CV in assets and connected the Open CV button to it.
+
+
+## v4 update
+The four right-side hero cards were made more compact so they fit together cleanly without requiring vertical scrolling on typical desktop screens.
