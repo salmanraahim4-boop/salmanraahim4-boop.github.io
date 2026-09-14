@@ -10,6 +10,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .publication-title-link{
+      color:inherit;
+      text-decoration:none;
+      transition:color .18s ease;
+    }
+    .publication-title-link:hover{
+      color:#3f86c2;
+    }
+    .publication-action{
+      display:inline-flex;
+      align-items:center;
+      margin-top:9px;
+      color:#12355b;
+      font-size:13px;
+      font-weight:800;
+      text-decoration:none;
+      border-bottom:1px solid #b8d7ee;
+      padding-bottom:2px;
+    }
+    .publication-action:hover{
+      color:#3f86c2;
+      border-color:#3f86c2;
+    }
+    .scholar-button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:12px;
+      border:1px solid #c9e2f5;
+      background:#fff;
+      color:#12355b;
+      font-size:14px;
+      font-weight:800;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .scholar-button:hover{
+      background:#f5fbff;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -182,7 +227,12 @@
         <p class="section-kicker">PUBLICATIONS</p>
         <h2 class="section-title">All publications</h2>
       </div>
-      <p class="section-intro">Seven publications listed in my CV across dental education, oral health, public health and clinical research.</p>
+      <div>
+        <p class="section-intro">Seven publications listed in my CV across dental education, oral health, public health and clinical research.</p>
+        <a class="scholar-button"
+           href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=bESIrGAAAAAJ"
+           target="_blank" rel="noopener">View Google Scholar ↗</a>
+      </div>
     </div>
 
     <div class="publication-list">
@@ -190,8 +240,9 @@
         <div class="pub-year">2025</div>
         <div>
           <p class="journal">Scientific Reports • Nature Portfolio</p>
-          <h3>Awareness, Usage, and Perspectives on ChatGPT in Dental Education</h3>
+          <h3><a class="publication-title-link" href="https://www.nature.com/articles/s41598-025-33704-1" target="_blank" rel="noopener">Awareness, Usage, and Perspectives on ChatGPT in Dental Education</a></h3>
           <p class="pub-detail">First author; study design, data collection, SPSS analysis, regression modelling, and manuscript development.</p>
+          <a class="publication-action" href="https://www.nature.com/articles/s41598-025-33704-1" target="_blank" rel="noopener">Open publication ↗</a>
         </div>
       </article>
 
@@ -199,8 +250,9 @@
         <div class="pub-year">2025</div>
         <div>
           <p class="journal">Journal of the Pakistan Medical Association</p>
-          <h3>Child Domestic Labour in Pakistan: A Narrative Review</h3>
+          <h3><a class="publication-title-link" href="https://pubmed.ncbi.nlm.nih.gov/40269374/" target="_blank" rel="noopener">Child Domestic Labour in Pakistan: A Narrative Review</a></h3>
           <p class="pub-detail">First author; concept, design, drafting, revision, and evidence synthesis.</p>
+          <a class="publication-action" href="https://pubmed.ncbi.nlm.nih.gov/40269374/" target="_blank" rel="noopener">Open publication ↗</a>
         </div>
       </article>
 
@@ -208,8 +260,9 @@
         <div class="pub-year">—</div>
         <div>
           <p class="journal">Journal of the College of Physicians and Surgeons Pakistan</p>
-          <h3>The Elderly’s Limited Awareness of Advanced Dental Procedures and Unmet Dental Needs in Pakistan</h3>
+          <h3><a class="publication-title-link" href="https://jcpsp.pk/article-detail/pthe-elderlyand39s-limited-awareness-of-advancedway-dental-procedures-hinders-access-to-treatment-resulting-in-persistent-pain-and-unmet-dental-needs-in-pakistanorp" target="_blank" rel="noopener">The Elderly’s Limited Awareness of Advanced Dental Procedures and Unmet Dental Needs in Pakistan</a></h3>
           <p class="pub-detail">First author; research communication and manuscript development.</p>
+          <a class="publication-action" href="https://jcpsp.pk/article-detail/pthe-elderlyand39s-limited-awareness-of-advancedway-dental-procedures-hinders-access-to-treatment-resulting-in-persistent-pain-and-unmet-dental-needs-in-pakistanorp" target="_blank" rel="noopener">Open publication ↗</a>
         </div>
       </article>
 
@@ -217,8 +270,9 @@
         <div class="pub-year">2024</div>
         <div>
           <p class="journal">BMC Oral Health</p>
-          <h3>Impact of Dental Handpiece Noise on Anxiety and Heart Rate</h3>
+          <h3><a class="publication-title-link" href="https://link.springer.com/article/10.1186/s12903-024-04017-y" target="_blank" rel="noopener">Impact of Dental Handpiece Noise on Anxiety and Heart Rate</a></h3>
           <p class="pub-detail">First author; clinical dental research, study design, data collection, and original manuscript writing.</p>
+          <a class="publication-action" href="https://link.springer.com/article/10.1186/s12903-024-04017-y" target="_blank" rel="noopener">Open publication ↗</a>
         </div>
       </article>
 
@@ -235,8 +289,9 @@
         <div class="pub-year">2024</div>
         <div>
           <p class="journal">Journal of Community Medicine and Public Health Reports</p>
-          <h3>Ethnicity, Age, pH, and Sperm Concentration in Male Infertility</h3>
+          <h3><a class="publication-title-link" href="https://www.acquaintpublications.com/article/exploring_the_relationship_between_ethnicity_age_ph_and_sperm_concentration_in_male_infertility" target="_blank" rel="noopener">Ethnicity, Age, pH, and Sperm Concentration in Male Infertility</a></h3>
           <p class="pub-detail">Contributed to literature review, manuscript preparation, and article submission.</p>
+          <a class="publication-action" href="https://www.acquaintpublications.com/article/exploring_the_relationship_between_ethnicity_age_ph_and_sperm_concentration_in_male_infertility" target="_blank" rel="noopener">Open publication ↗</a>
         </div>
       </article>
 
@@ -244,8 +299,9 @@
         <div class="pub-year">2023</div>
         <div>
           <p class="journal">Altamash Journal of Dentistry and Medicine</p>
-          <h3>Comparison of Two Surgical Approaches for Mandibular Angle Fractures</h3>
+          <h3><a class="publication-title-link" href="https://ajdm.altamash.edu.pk/index.php/ojs3/article/view/33/23" target="_blank" rel="noopener">Comparison of Two Surgical Approaches for Mandibular Angle Fractures</a></h3>
           <p class="pub-detail">First author; randomized clinical research in oral and maxillofacial surgery.</p>
+          <a class="publication-action" href="https://ajdm.altamash.edu.pk/index.php/ojs3/article/view/33/23" target="_blank" rel="noopener">Open publication ↗</a>
         </div>
       </article>
     </div>
