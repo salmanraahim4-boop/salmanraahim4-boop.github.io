@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raahim Salman — Fall Prevention and Management Program for community-dwelling older people in Karachi." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Fall Prevention Program | Raahim Salman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .project-page{
+      max-width:1318px;
+      width:calc(100% - 42px);
+      margin:62px auto 0;
+    }
+    .hero-card{
+      padding:40px 42px;
+      border:1px solid #c9e2f5;
+      border-radius:32px;
+      background:linear-gradient(115deg,#ffffff 0%,#fbfdff 44%,#eef8ff 100%);
+      box-shadow:0 16px 38px rgba(18,53,91,.045);
+    }
+    .brand-row{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-bottom:20px;
+    }
+    .brand-row img{
+      width:110px;
+      height:110px;
+      object-fit:contain;
+      padding:10px;
+      border:1px solid #d7e8f4;
+      border-radius:18px;
+      background:#fff;
+    }
+    .brand-copy strong{
+      display:block;
+      color:#12355b;
+      font-size:20px;
+    }
+    .brand-copy span{
+      display:block;
+      margin-top:3px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .funding-card{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-top:22px;
+      padding:18px 20px;
+      border:1px solid #d7e8f4;
+      border-radius:20px;
+      background:#fff;
+    }
+    .funding-icon{
+      width:56px;
+      height:56px;
+      display:grid;
+      place-items:center;
+      flex:0 0 56px;
+      border-radius:16px;
+      background:#eef8ff;
+      color:#12355b;
+      font-size:25px;
+      font-weight:800;
+    }
+    .funding-card strong{
+      display:block;
+      color:#12355b;
+      font-size:17px;
+    }
+    .funding-card span{
+      display:block;
+      margin-top:3px;
+      color:#637689;
+      font-size:14px;
+    }
+    .project-kicker{
+      margin:16px 0 12px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .hero-card h1{
+      max-width:1040px;
+      margin:0;
+      color:#12355b;
+      font-size:52px;
+      line-height:1.08;
+      letter-spacing:-.045em;
+    }
+    .hero-lead{
+      max-width:1020px;
+      margin:20px 0 0;
+      color:#637689;
+      font-size:18px;
+      line-height:1.75;
+    }
+    .project-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:27px;
+    }
+    .section-space{margin-top:22px}
+    .two-col{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:18px;
+    }
+    .card{
+      padding:28px;
+      border:1px solid #c9e2f5;
+      border-radius:24px;
+      background:#fff;
+    }
+    .card h2{
+      margin:0 0 14px;
+      color:#082f5e;
+      font-size:28px;
+      letter-spacing:-.03em;
+    }
+    .card p,.card li{
+      color:#637689;
+      font-size:16px;
+      line-height:1.72;
+    }
+    .card p{margin:0}
+    .card ul{
+      margin:0;
+      padding-left:21px;
+    }
+    .card li{margin-bottom:8px}
+    .fact-grid{display:grid;gap:8px}
+    .fact{
+      display:grid;
+      grid-template-columns:160px 1fr;
+      gap:14px;
+      padding:10px 0;
+      border-bottom:1px solid #e5f0f8;
+    }
+    .fact:last-child{border-bottom:0}
+    .fact strong{color:#12355b;font-size:14px}
+    .fact span{color:#637689;font-size:14px;line-height:1.5}
+    .method-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .method-card{
+      padding:20px;
+      border:1px solid #c9e2f5;
+      border-radius:20px;
+      background:#f9fcfe;
+    }
+    .method-card h3{
+      margin:0 0 8px;
+      color:#12355b;
+      font-size:18px;
+    }
+    .method-card p{
+      margin:0;
+      color:#637689;
+      font-size:14px;
+      line-height:1.65;
+    }
+    .role-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+    .role-item{
+      padding:18px;
+      border:1px solid #d7e8f4;
+      border-radius:18px;
+      background:#f9fcfe;
+    }
+    .role-item h3{
+      margin:0 0 8px;
+      color:#12355b;
+      font-size:18px;
+    }
+    .role-item p{
+      margin:0;
+      color:#637689;
+      font-size:14px;
+      line-height:1.65;
+    }
+    .result-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+    .result-item{
+      padding:20px;
+      border:1px solid #c9e2f5;
+      border-radius:20px;
+      background:linear-gradient(130deg,#f9fcfe,#eef8ff);
+    }
+    .result-item strong{
+      display:block;
+      color:#12355b;
+      font-size:17px;
+      margin-bottom:7px;
+    }
+    .result-item span{
+      color:#637689;
+      font-size:14px;
+      line-height:1.6;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+    .gallery figure{
+      margin:0;
+      overflow:hidden;
+      border:1px solid #c9e2f5;
+      border-radius:22px;
+      background:#fff;
+    }
+    .gallery img{
+      display:block;
+      width:100%;
+      height:330px;
+      object-fit:cover;
+    }
+    .gallery figcaption{
+      padding:14px 16px;
+      color:#637689;
+      font-size:14px;
+      line-height:1.55;
+    }
+    .tag-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:18px;
+    }
+    .tag{
+      padding:8px 13px;
+      border-radius:999px;
+      border:1px solid #c9e2f5;
+      background:#f8fcff;
+      color:#12355b;
+      font-size:13px;
+      font-weight:600;
+    }
+    @media(max-width:1000px){
+      .two-col,.method-grid,.role-grid,.result-grid,.gallery{
+        grid-template-columns:1fr;
+      }
+    }
+    @media(max-width:700px){
+      .project-page{width:calc(100% - 28px);margin-top:34px}
+      .hero-card{padding:26px 22px;border-radius:24px}
+      .hero-card h1{font-size:36px}
+      .gallery img{height:240px}
+      .fact{grid-template-columns:1fr;gap:4px}
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html#home" aria-label="Raahim Salman home">RS</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="main-nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#experience">Research Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#training">Courses & Certifications</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="project-page">
+  <section class="hero-card">
+    <div class="brand-row">
+      <img src="assets/aku-logo.jpg" alt="The Aga Khan University logo">
+      <div class="brand-copy">
+        <strong>The Aga Khan University</strong>
+        <span>Geriatrics • Community Health • Mixed-Methods Research</span>
+      </div>
+    </div>
+
+    <p class="project-kicker">OLDER ADULT HEALTH • FALL PREVENTION • BALANCE & GAIT</p>
+    <h1>Fall Prevention & Management Program in Karachi, Pakistan</h1>
+    <p class="hero-lead">
+      A mixed-method research and intervention project involving community-dwelling older people in Karachi.
+      The project examined perceptions of falls and fall management while evaluating a 12-week balance,
+      gait, and Tai Chi–based program using quantitative assessments and qualitative interviews.
+    </p>
+
+    <div class="project-actions">
+      <a class="button button-primary"
+         href="https://www.aku.edu/sonampk/research/Pages/sonam-geriatrics.aspx"
+         target="_blank" rel="noopener">AKU — Geriatrics Research</a>
+      <a class="button button-secondary" href="index.html#projects">Back to Projects</a>
+    </div>
+
+    <div class="funding-card">
+      <div class="funding-icon">URC</div>
+      <div>
+        <strong>AKU University Research Council — Intramural Funding</strong>
+        <span>The original research proposal was submitted under Aga Khan University Research Council intramural funding.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-col section-space">
+    <article class="card">
+      <h2>Project overview</h2>
+      <p>
+        The study was designed to understand how older adults and caregivers perceive falls, fall-related injuries,
+        prevention, and community-level management. It also evaluated whether a structured exercise program could
+        improve gait, balance, cognition, mood, confidence, and functional independence.
+      </p>
+      <div class="tag-list">
+        <span class="tag">Mixed Methods</span>
+        <span class="tag">Older Adult Health</span>
+        <span class="tag">Fall Prevention</span>
+        <span class="tag">Tai Chi</span>
+        <span class="tag">Gait & Balance</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Study snapshot</h2>
+      <div class="fact-grid">
+        <div class="fact"><strong>Setting</strong><span>Community/respite-centre settings in Karachi</span></div>
+        <div class="fact"><strong>Sites documented</strong><span>VCARE, Sunrise, and Florida Old Age Home</span></div>
+        <div class="fact"><strong>Intervention</strong><span>12-week Balance and Gait Strengthening / Tai Chi–based program</span></div>
+        <div class="fact"><strong>Quantitative tools</strong><span>Timed Up and Go (TUG), Mini-Cog, and depression score</span></div>
+        <div class="fact"><strong>Qualitative component</strong><span>In-depth interviews with older adults and caregivers</span></div>
+        <div class="fact"><strong>Design</strong><span>Pre/post intervention supported by qualitative inquiry</span></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="card section-space">
+    <h2>My contribution</h2>
+    <div class="role-grid">
+      <div class="role-item">
+        <h3>Research team support</h3>
+        <p>Participated as a project intern within the research team supporting the fall-prevention study and intervention activities.</p>
+      </div>
+      <div class="role-item">
+        <h3>Data collection</h3>
+        <p>Supported collection of mixed-method study data, including participant assessments and qualitative research activities.</p>
+      </div>
+      <div class="role-item">
+        <h3>Analysis & interpretation</h3>
+        <p>Contributed to analysis and interpretation of quantitative and qualitative findings across the intervention period.</p>
+      </div>
+      <div class="role-item">
+        <h3>Reporting & documentation</h3>
+        <p>Supported project reporting, research documentation, presentation preparation, and synthesis of study findings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-space">
+    <h2>Methods and assessments</h2>
+    <div class="method-grid">
+      <div class="method-card">
+        <h3>Timed Up and Go (TUG)</h3>
+        <p>Used to assess mobility, gait, and balance by timing a participant standing from a chair, walking, turning, returning, and sitting.</p>
+      </div>
+      <div class="method-card">
+        <h3>Mini-Cog</h3>
+        <p>A brief cognitive screening tool used alongside the intervention to observe changes in cognitive performance over time.</p>
+      </div>
+      <div class="method-card">
+        <h3>Qualitative interviews</h3>
+        <p>In-depth interviews explored participants’ and caregivers’ perceptions of falls, confidence, mobility, isolation, and daily functioning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-space">
+    <h2>Key findings</h2>
+    <p>
+      The project reported improvement during the intervention period, with changes observed in cognition,
+      depression scores, and mobility measures. Qualitative findings also described improved confidence and enjoyment
+      of Tai Chi for some participants, while isolation and missing family members remained important concerns.
+    </p>
+    <div class="result-grid">
+      <div class="result-item">
+        <strong>Mini-Cog</strong>
+        <span>Improvement was observed across intervention follow-ups compared with baseline.</span>
+      </div>
+      <div class="result-item">
+        <strong>Depression score</strong>
+        <span>Improvement was reported during the intervention, including significant differences at selected follow-up points.</span>
+      </div>
+      <div class="result-item">
+        <strong>TUG / mobility</strong>
+        <span>The clearest improvement in gait and balance was reported by the 12-week assessment.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-space">
+    <h2>Project photos</h2>
+    <div class="gallery">
+      <figure>
+        <img src="assets/fall-vcare-walking.jpg" alt="Older adults participating in mobility and walking activity during the fall-prevention project">
+        <figcaption>Mobility and walking activity with older adults in the community setting.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/fall-interview-assessment.jpg" alt="Participant interview or assessment during the fall-prevention project">
+        <figcaption>Participant interview / assessment as part of the mixed-method research component.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/fall-group-session.jpg" alt="Group session with older adults">
+        <figcaption>Group orientation and exercise preparation with older adult participants.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/fall-tai-chi-1.jpg" alt="Tai Chi training session for older adults">
+        <figcaption>Tai Chi and balance-training session used within the fall-prevention intervention.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/fall-tai-chi-3.jpg" alt="Older adults practicing balance and gait exercises">
+        <figcaption>Balance, gait, and coordinated movement exercises with participants.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/fall-tai-chi-5.jpg" alt="Older adults practicing Tai Chi during the intervention">
+        <figcaption>Supervised movement practice during the 12-week intervention period.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card section-space" style="margin-bottom:72px;">
+    <h2>Why this project matters</h2>
+    <p>
+      Falls can affect physical health, confidence, independence, and social participation in older adults.
+      This project combined community perspectives with measurable functional outcomes to explore whether a locally
+      contextualized fall-prevention program could support safer mobility and better well-being among older people in Karachi.
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo small">RS</span><span>Raahim Salman</span></div>
+    <p>Biostatistics • Health Data Analysis • Clinical Research</p>
+    <p>© <span id="year"></span> Raahim Salman</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
