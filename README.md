@@ -1,64 +1,38 @@
-# Raahim Salman — GitHub Portfolio v2
+# Raahim Salman — Full CV Portfolio
 
-This version matches the requested light portfolio theme:
+This version expands the portfolio to include the full content of the supplied CV.
 
-- white background
-- navy typography
-- sky-blue accents
-- pale-blue rounded hero
-- white statistic cards
-- rounded project/research cards
-- responsive mobile navigation
+## Navigation
+The sticky navigation links scroll directly to:
+- Home
+- Projects
+- Publications
+- Research Experience
+- Education
+- Courses & Certifications
+- Contact
 
-## Before publishing
+## Included content
+- Full professional profile
+- Full skills and tools
+- Languages and interests
+- All funded/non-funded projects listed in the CV
+- All 7 publications listed in the CV
+- All professional/research/clinical experience entries and bullets
+- Master's and bachelor's education
+- All professional courses
+- All research-based certifications
+- All clinical-based certifications/training
+- Contact links for email, LinkedIn, Google Scholar and ORCID
+- The supplied CV file in the assets folder
 
-### 1. Add your CV
+Professional references are intentionally not shown on the public website because they contain third-party contact details.
 
-Put your CV PDF in:
-
-`assets/Raahim_Salman_CV.pdf`
-
-The **Open CV** button is already linked to that file.
-
-### 2. Replace contact placeholders in index.html
-
-Search for:
-
-- `YOUR_EMAIL_HERE`
-- `YOUR_LINKEDIN_URL`
-- `YOUR_GITHUB_URL`
-
-and replace them with your actual links.
-
-## Publish on GitHub Pages
-
-If your GitHub username is `raahimsalman`, create a public repository named:
-
-`raahimsalman.github.io`
-
-Upload these files to the root of the repository:
-
+## Update the live GitHub Pages site
+Upload/replace these files in the existing repository:
 - index.html
 - style.css
 - script.js
-- assets/
+- assets/Raahim_Salman_Biostatistics_CV.docx
 
-Then go to:
-
-**Repository → Settings → Pages → Deploy from a branch → main → /(root)**
-
-Your site will be available publicly at:
-
-`https://raahimsalman.github.io`
-
-Anyone can open it without a GitHub account.
-
-
-## v3 update
-- Expanded analytical tools card: R, SAS, SQL, Excel, SPSS, NVivo, EndNote, Overleaf.
-- Added Languages card: English (Fluent), Dutch (A2), Urdu (Native).
-- Included the uploaded CV in assets and connected the Open CV button to it.
-
-
-## v4 update
-The four right-side hero cards were made more compact so they fit together cleanly without requiring vertical scrolling on typical desktop screens.
+Commit the changes and wait for the GitHub Pages deployment to complete.

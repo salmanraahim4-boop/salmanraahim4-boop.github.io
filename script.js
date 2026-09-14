@@ -18,23 +18,17 @@ navLinks.forEach(link => {
   });
 });
 
-const setActiveLink = () => {
+function setActiveLink(){
   let current = "home";
-  const y = window.scrollY + 150;
-
+  const y = window.scrollY + 145;
   sections.forEach(section => {
-    if (section.offsetTop <= y) current = section.id;
+    if(section.offsetTop <= y) current = section.id;
   });
-
   navLinks.forEach(link => {
-    link.classList.toggle(
-      "active",
-      link.getAttribute("href") === `#${current}`
-    );
+    link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
   });
-};
+}
 
-window.addEventListener("scroll", setActiveLink, { passive:true });
+window.addEventListener("scroll", setActiveLink, {passive:true});
 setActiveLink();
-
 document.getElementById("year").textContent = new Date().getFullYear();
