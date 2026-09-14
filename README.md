@@ -1,30 +1,54 @@
-# Raahim Salman — Portfolio Website (Navy Theme)
+# Raahim Salman — GitHub Portfolio v2
 
-This is the navy-blue themed version of your GitHub Pages portfolio.
+This version matches the requested light portfolio theme:
 
-## How to update your live site
+- white background
+- navy typography
+- sky-blue accents
+- pale-blue rounded hero
+- white statistic cards
+- rounded project/research cards
+- responsive mobile navigation
 
-1. Open your GitHub repository.
-2. Upload and replace these files:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-   - `assets/` folder (keep your own assets too)
-3. Commit the changes.
-4. Wait 1–2 minutes.
-5. Refresh your site.
+## Before publishing
 
-## Your live URL
+### 1. Add your CV
 
-If your repository name matches your GitHub username, your site will remain live at:
+Put your CV PDF in:
 
-`https://salmanraahim4-boop.github.io`
+`assets/Raahim_Salman_CV.pdf`
 
-## Still personalize these placeholders
+The **Open CV** button is already linked to that file.
 
-Open `index.html` and replace:
+### 2. Replace contact placeholders in index.html
+
+Search for:
+
 - `YOUR_EMAIL_HERE`
 - `YOUR_LINKEDIN_URL`
 - `YOUR_GITHUB_URL`
 
-You can also place your CV PDF in `assets/` and link it from the buttons later.
+and replace them with your actual links.
+
+## Publish on GitHub Pages
+
+If your GitHub username is `raahimsalman`, create a public repository named:
+
+`raahimsalman.github.io`
+
+Upload these files to the root of the repository:
+
+- index.html
+- style.css
+- script.js
+- assets/
+
+Then go to:
+
+**Repository → Settings → Pages → Deploy from a branch → main → /(root)**
+
+Your site will be available publicly at:
+
+`https://raahimsalman.github.io`
+
+Anyone can open it without a GitHub account.

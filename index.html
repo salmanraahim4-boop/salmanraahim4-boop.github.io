@@ -3,366 +3,360 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Raahim Salman — Biostatistician, Health Data Analyst and Clinical Researcher." />
-  <meta name="theme-color" content="#081a33" />
+  <meta name="description" content="Raahim Salman — Biostatistician, Health Data Scientist and Clinical Researcher." />
+  <meta name="theme-color" content="#ffffff" />
   <title>Raahim Salman | Biostatistician</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="page-noise"></div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo" href="#home" aria-label="Raahim Salman home">RS</a>
 
-  <header class="navbar">
-    <a class="brand" href="#home" aria-label="Raahim Salman home">
-      <span class="brand-mark">RS</span>
-      <span class="brand-text">Raahim Salman</span>
-    </a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
 
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </nav>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Research Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-orb hero-orb-one"></div>
-      <div class="hero-orb hero-orb-two"></div>
+    <!-- HERO -->
+    <section class="hero-wrap" id="home">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">BIOSTATISTICS • HEALTH DATA • CLINICAL RESEARCH</p>
 
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> BIOSTATISTICS · HEALTH DATA SCIENCE · CLINICAL RESEARCH</p>
-        <h1>
-          Turning health data into
-          <span class="gradient-text">evidence that matters.</span>
-        </h1>
-        <p class="hero-subtitle">
-          I’m <strong>Raahim Salman</strong>, a biostatistician and healthcare researcher combining
-          statistical modelling, clinical insight and reproducible data analysis to answer meaningful
-          biomedical questions.
-        </p>
+          <h1>Raahim Salman</h1>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Explore My Work <span>↗</span></a>
-          <a class="btn btn-secondary" href="#research">View Research</a>
-        </div>
+          <h2>Biostatistician | Health Data Scientist | Clinical Researcher</h2>
 
-        <div class="hero-meta">
-          <div><strong>R · SAS · SPSS · SQL</strong><span>Statistical Computing</span></div>
-          <div><strong>Survival · GLM/GLMM</strong><span>Statistical Modelling</span></div>
-          <div><strong>Clinical + Public Health</strong><span>Research Domain</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="profile-shell">
-          <div class="profile-ring"></div>
-          <div class="profile-card">
-            <div class="profile-topline">
-              <span class="status-dot"></span>
-              <span>Open to research & biostatistics opportunities</span>
-            </div>
-            <div class="monogram">RS</div>
-            <h2>Raahim Salman</h2>
-            <p>Biostatistician · Health Data Analyst</p>
-            <div class="profile-tags">
-              <span>Survival Analysis</span>
-              <span>Clinical Research</span>
-              <span>Machine Learning</span>
-              <span>Scientific Writing</span>
-            </div>
-          </div>
-          <div class="floating-card fc-one">
-            <span class="floating-icon">∑</span>
-            <div><strong>Statistical Modelling</strong><small>From inference to interpretation</small></div>
-          </div>
-          <div class="floating-card fc-two">
-            <span class="floating-icon">⌁</span>
-            <div><strong>Research</strong><small>Peer-reviewed & interdisciplinary</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="marquee" aria-label="Core skills">
-      <div class="marquee-track">
-        <span>R / RStudio</span><i>✦</i><span>SAS</span><i>✦</i><span>SPSS</span><i>✦</i>
-        <span>Survival Analysis</span><i>✦</i><span>Cox Models</span><i>✦</i><span>GLM / GLMM</span><i>✦</i>
-        <span>Machine Learning</span><i>✦</i><span>SQL</span><i>✦</i><span>Scientific Writing</span><i>✦</i>
-        <span>R / RStudio</span><i>✦</i><span>SAS</span><i>✦</i><span>SPSS</span><i>✦</i>
-        <span>Survival Analysis</span><i>✦</i><span>Cox Models</span><i>✦</i><span>GLM / GLMM</span><i>✦</i>
-      </div>
-    </section>
-
-    <section class="section split-section" id="about">
-      <div class="section-label reveal">01 / ABOUT</div>
-      <div class="about-grid">
-        <div class="about-heading reveal">
-          <h2>Clinical understanding.<br><span>Statistical depth.</span></h2>
-        </div>
-        <div class="about-copy reveal">
-          <p>
-            My background bridges healthcare, research and quantitative science. I am completing an
-            M.Sc. in Statistics and Data Science at UHasselt with a focus on biostatistics, after
-            training in dentistry and working in clinical and public-health research.
+          <p class="hero-description">
+            I combine healthcare knowledge with statistics, data science, machine learning,
+            and clinical research to turn complex health data into meaningful evidence.
           </p>
-          <p>
-            I enjoy taking a research question from study design through data management, modelling,
-            interpretation and scientific communication — with special interest in survival analysis,
-            regression modelling, epidemiology and health data science.
-          </p>
-          <div class="quick-facts">
-            <div><strong>M.Sc.</strong><span>Statistics & Data Science</span></div>
-            <div><strong>Clinical</strong><span>Healthcare research background</span></div>
-            <div><strong>Published</strong><span>Peer-reviewed research</span></div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="assets/Raahim_Salman_CV.pdf" target="_blank">Open CV</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section" id="expertise">
-      <div class="section-heading reveal">
-        <div>
-          <div class="section-label">02 / EXPERTISE</div>
-          <h2>What I bring to the table.</h2>
+        <div class="hero-stats" aria-label="Professional highlights">
+          <article class="stat-card">
+            <strong>7+</strong>
+            <span>Published studies</span>
+          </article>
+
+          <article class="stat-card">
+            <strong>3</strong>
+            <span>Internationally funded research projects</span>
+          </article>
+
+          <article class="stat-card">
+            <strong>R • SAS • SPSS</strong>
+            <span>Core analytical tools</span>
+          </article>
         </div>
-        <p>Statistical thinking, research execution and clear communication — combined in one workflow.</p>
       </div>
+    </section>
 
-      <div class="expertise-grid">
-        <article class="expertise-card reveal">
-          <span class="card-number">01</span>
-          <div class="card-icon">ƒ(x)</div>
-          <h3>Statistical Modelling</h3>
-          <p>Linear and logistic regression, Cox proportional hazards, GLM/GLMM, multivariate methods and Bayesian foundations.</p>
-          <div class="mini-tags"><span>Regression</span><span>Inference</span><span>Mixed Models</span></div>
+    <!-- PROFILE -->
+    <section class="section profile-section">
+      <div class="section-kicker">PROFILE</div>
+      <h2 class="section-title">What I work on</h2>
+
+      <div class="three-card-grid">
+        <article class="info-card">
+          <h3>Biostatistics</h3>
+          <p>
+            Statistical modelling, survival analysis, regression, GLM/GLMM,
+            multivariate methods and applied inference for biomedical data.
+          </p>
+          <div class="tag-row">
+            <span>Cox models</span>
+            <span>Regression</span>
+            <span>Survival</span>
+          </div>
         </article>
 
-        <article class="expertise-card reveal">
-          <span class="card-number">02</span>
-          <div class="card-icon">λ(t)</div>
-          <h3>Survival Analysis</h3>
-          <p>Time-to-event modelling, robust variance estimation, clustered survival data and dependence modelling with copulas.</p>
-          <div class="mini-tags"><span>Cox PH</span><span>Copulas</span><span>Robust SE</span></div>
+        <article class="info-card">
+          <h3>Machine Learning & Data Science</h3>
+          <p>
+            Data preparation, predictive modelling, reproducible workflows and
+            clear interpretation of results for healthcare applications.
+          </p>
+          <div class="tag-row">
+            <span>R</span>
+            <span>Python</span>
+            <span>SQL</span>
+          </div>
         </article>
 
-        <article class="expertise-card reveal">
-          <span class="card-number">03</span>
-          <div class="card-icon">⌘</div>
-          <h3>Clinical Research</h3>
-          <p>Study design, ethics, data collection, validation, field coordination, qualitative research and publication support.</p>
-          <div class="mini-tags"><span>Study Design</span><span>Data Quality</span><span>Fieldwork</span></div>
-        </article>
-
-        <article class="expertise-card reveal">
-          <span class="card-number">04</span>
-          <div class="card-icon">ML</div>
-          <h3>Health Data Science</h3>
-          <p>Reproducible analysis across R, SAS, SPSS and SQL, with growing application of Python and machine-learning methods.</p>
-          <div class="mini-tags"><span>R</span><span>SAS</span><span>Python</span></div>
+        <article class="info-card">
+          <h3>Clinical & Public Health Research</h3>
+          <p>
+            Study design, mixed methods, data quality, research coordination,
+            qualitative analysis and scientific communication.
+          </p>
+          <div class="tag-row">
+            <span>Study design</span>
+            <span>Field research</span>
+            <span>Publication</span>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section" id="projects">
-      <div class="section-heading reveal">
+      <div class="section-top">
         <div>
-          <div class="section-label">03 / SELECTED WORK</div>
-          <h2>Projects with analytical depth.</h2>
+          <div class="section-kicker">SELECTED WORK</div>
+          <h2 class="section-title">Projects</h2>
         </div>
-        <p>Selected work showing how I approach complex health and research problems.</p>
+        <p class="section-intro">
+          A selection of methodological, clinical and health-data projects showing
+          how I translate research questions into reproducible analysis.
+        </p>
       </div>
 
-      <div class="projects-stack">
-        <article class="project-card featured reveal">
-          <div class="project-visual survival-visual">
-            <div class="chart-grid"></div>
-            <svg viewBox="0 0 600 320" role="img" aria-label="Stylized survival curves">
-              <path d="M40 45 H140 V70 H210 V98 H290 V145 H365 V188 H455 V230 H560" />
-              <path d="M40 70 H120 V92 H180 V125 H250 V155 H330 V205 H420 V245 H560" class="line-two"/>
-              <path d="M40 35 V270 H565" class="axis"/>
+      <div class="project-grid">
+        <article class="project-card project-wide">
+          <div class="project-visual survival-visual" aria-hidden="true">
+            <div class="visual-label">MASTER'S THESIS</div>
+            <svg viewBox="0 0 520 270">
+              <line x1="50" y1="225" x2="480" y2="225" />
+              <line x1="50" y1="35" x2="50" y2="225" />
+              <polyline points="50,55 120,55 120,75 180,75 180,100 250,100 250,130 320,130 320,170 395,170 395,202 475,202" class="curve-one"/>
+              <polyline points="50,75 105,75 105,94 165,94 165,122 230,122 230,150 300,150 300,182 370,182 370,210 475,210" class="curve-two"/>
             </svg>
-            <div class="visual-badge">MASTER'S THESIS</div>
           </div>
-          <div class="project-content">
-            <p class="project-kicker">Survival Analysis · R · Methodology</p>
+
+          <div class="project-copy">
+            <p class="project-type">Survival Analysis • R • Statistical Methodology</p>
             <h3>Divide-and-Combine Estimation for Clustered Survival Data</h3>
             <p>
-              A methodological study evaluating scalable estimation for clustered multivariate survival data.
-              The work combines marginal Cox modelling, robust variance estimation and Clayton copula dependence modelling.
+              Master’s thesis evaluating scalable estimation for clustered multivariate
+              survival data using marginal Cox models, robust variance estimation and
+              Clayton copula dependence modelling.
             </p>
-            <div class="project-highlights">
-              <span>Cox proportional hazards</span>
-              <span>Cluster-robust variance</span>
-              <span>Clayton copula</span>
+            <div class="tag-row">
+              <span>Cox PH</span>
+              <span>Robust SE</span>
+              <span>Clayton Copula</span>
               <span>Kendall's τ</span>
-              <span>Simulation / comparison</span>
             </div>
-            <a href="#contact" class="text-link">Discuss this project <span>↗</span></a>
           </div>
         </article>
 
-        <div class="project-grid">
-          <article class="project-card compact reveal">
-            <div class="compact-visual purple">
-              <div class="metric-card"><strong>AI × Dentistry</strong><span>Survey · Regression · SPSS</span></div>
+        <article class="project-card">
+          <div class="mini-project-visual">
+            <span>AI × DENTISTRY</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">Dental Education • AI</p>
+            <h3>ChatGPT in Dental Education</h3>
+            <p>
+              Analysis of awareness, usage and perspectives surrounding generative
+              AI in dental education, including regression modelling and manuscript development.
+            </p>
+            <div class="tag-row">
+              <span>SPSS</span>
+              <span>Regression</span>
+              <span>Survey research</span>
             </div>
-            <div class="project-content">
-              <p class="project-kicker">Dental Education · AI</p>
-              <h3>ChatGPT in Dental Education</h3>
-              <p>Research on awareness, usage and perspectives surrounding generative AI in dental education.</p>
-              <div class="project-highlights"><span>Study design</span><span>Regression</span><span>Publication</span></div>
-            </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project-card compact reveal">
-            <div class="compact-visual teal">
-              <div class="pulse"></div>
-              <div class="metric-card"><strong>Clinical Dental Study</strong><span>Anxiety · Heart rate · Noise</span></div>
+        <article class="project-card">
+          <div class="mini-project-visual pulse-visual">
+            <span>CLINICAL STUDY</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-type">Clinical Research • Dentistry</p>
+            <h3>Dental Handpiece Noise, Anxiety & Heart Rate</h3>
+            <p>
+              Clinical research exploring relationships between procedural noise,
+              patient anxiety and physiological response.
+            </p>
+            <div class="tag-row">
+              <span>Clinical data</span>
+              <span>Statistics</span>
+              <span>Publication</span>
             </div>
-            <div class="project-content">
-              <p class="project-kicker">Clinical Research</p>
-              <h3>Dental Handpiece Noise & Patient Anxiety</h3>
-              <p>Clinical research examining relationships between dental handpiece noise, anxiety and physiological response.</p>
-              <div class="project-highlights"><span>Clinical data</span><span>Analysis</span><span>Scientific writing</span></div>
-            </div>
-          </article>
-        </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section research-section" id="research">
-      <div class="research-intro reveal">
-        <div class="section-label">04 / RESEARCH & PUBLICATIONS</div>
-        <h2>Research that connects methods with real health questions.</h2>
-        <p>My work spans dental research, public health, clinical research and methodological biostatistics.</p>
+    <!-- PUBLICATIONS -->
+    <section class="section section-soft" id="publications">
+      <div class="section-top">
+        <div>
+          <div class="section-kicker">RESEARCH OUTPUT</div>
+          <h2 class="section-title">Selected publications</h2>
+        </div>
+        <p class="section-intro">
+          Peer-reviewed research spanning dental education, oral health,
+          public health and clinical research.
+        </p>
       </div>
 
       <div class="publication-list">
-        <article class="publication reveal">
+        <article class="publication-row">
           <div class="pub-year">2026</div>
-          <div class="pub-main">
-            <p>Scientific Reports · Nature Portfolio</p>
+          <div>
+            <p class="journal">Scientific Reports • Nature Portfolio</p>
             <h3>Awareness, Usage, and Perspectives on ChatGPT in Dental Education</h3>
-            <span>First-author contribution · study design · data collection · SPSS · regression modelling · manuscript development</span>
+            <p class="pub-detail">
+              First-author contribution • study design • data collection • SPSS analysis • regression modelling • manuscript development
+            </p>
           </div>
-          <div class="pub-arrow">↗</div>
         </article>
 
-        <article class="publication reveal">
+        <article class="publication-row">
           <div class="pub-year">2025</div>
-          <div class="pub-main">
-            <p>Journal of the Pakistan Medical Association</p>
+          <div>
+            <p class="journal">Journal of the Pakistan Medical Association</p>
             <h3>Child Domestic Labour in Pakistan: A Narrative Review</h3>
-            <span>First author · concept · design · drafting · revision · evidence synthesis</span>
+            <p class="pub-detail">
+              First author • concept • design • drafting • revision • evidence synthesis
+            </p>
           </div>
-          <div class="pub-arrow">↗</div>
         </article>
 
-        <article class="publication reveal">
+        <article class="publication-row">
           <div class="pub-year">2024</div>
-          <div class="pub-main">
-            <p>BMC Oral Health</p>
+          <div>
+            <p class="journal">BMC Oral Health</p>
             <h3>Impact of Dental Handpiece Noise on Anxiety and Heart Rate</h3>
-            <span>First author · clinical research · study design · data collection · original manuscript writing</span>
+            <p class="pub-detail">
+              First author • clinical study • data collection • analysis • manuscript writing
+            </p>
           </div>
-          <div class="pub-arrow">↗</div>
         </article>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="section" id="experience">
-      <div class="section-heading reveal">
+      <div class="section-top">
         <div>
-          <div class="section-label">05 / EXPERIENCE</div>
-          <h2>Research, analysis and coordination.</h2>
+          <div class="section-kicker">RESEARCH EXPERIENCE</div>
+          <h2 class="section-title">From fieldwork to statistical analysis</h2>
         </div>
       </div>
 
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-side"><span>Clinical & Public Health Research</span></div>
-          <div class="timeline-main">
-            <h3>Senior Research Assistant <span>— Aga Khan University</span></h3>
-            <p>Supported clinical and public-health research, literature review, data collection, scientific writing and research coordination. Performed qualitative analysis including independent coding and theme generation.</p>
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="experience-label">CLINICAL & PUBLIC HEALTH</div>
+          <div>
+            <h3>Senior Research Assistant</h3>
+            <h4>Aga Khan University</h4>
+            <p>
+              Supported clinical and public-health research, literature review,
+              data collection, scientific writing and research coordination.
+              Conducted qualitative analysis including independent coding and theme generation.
+            </p>
           </div>
         </article>
 
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-side"><span>Sexual & Reproductive Health</span></div>
-          <div class="timeline-main">
-            <h3>Research Coordinator <span>— Sihat Mand Khaandaan</span></h3>
-            <p>Coordinated qualitative research across multiple regions, including focus groups and in-depth interviews, end-line assessment, research tools and field coordination.</p>
+        <article class="experience-card">
+          <div class="experience-label">SEXUAL & REPRODUCTIVE HEALTH</div>
+          <div>
+            <h3>Research Coordinator</h3>
+            <h4>Sihat Mand Khaandaan</h4>
+            <p>
+              Coordinated qualitative research across multiple regions, including
+              focus groups and in-depth interviews, end-line assessment,
+              research tools and field coordination.
+            </p>
           </div>
         </article>
 
-        <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-side"><span>Biostatistics</span></div>
-          <div class="timeline-main">
-            <h3>M.Sc. Statistics & Data Science <span>— UHasselt, Belgium</span></h3>
-            <p>Advanced training in statistical modelling, survival analysis, epidemiology, R, SAS, machine learning, multivariate methods and Bayesian methods.</p>
+        <article class="experience-card">
+          <div class="experience-label">BIOSTATISTICS EDUCATION</div>
+          <div>
+            <h3>M.Sc. Statistics & Data Science</h3>
+            <h4>UHasselt, Belgium • Biostatistics</h4>
+            <p>
+              Advanced training in statistical modelling, survival analysis,
+              epidemiology, machine learning, R, SAS, multivariate methods and Bayesian methods.
+            </p>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-soft">
+      <div class="section-kicker">ANALYTICAL TOOLKIT</div>
+      <h2 class="section-title">Methods & tools</h2>
+
+      <div class="skills-grid">
+        <article>
+          <span>Programming</span>
+          <h3>R / RStudio<br>SAS<br>SPSS<br>SQL<br>Python</h3>
+        </article>
+
+        <article>
+          <span>Statistical Methods</span>
+          <h3>Regression<br>Cox PH<br>GLM / GLMM<br>Multivariate Analysis<br>Bayesian Methods</h3>
+        </article>
+
+        <article>
+          <span>Research</span>
+          <h3>Study Design<br>Data Management<br>Qualitative Research<br>Scientific Writing<br>Publication Support</h3>
+        </article>
+
+        <article>
+          <span>Workflow</span>
+          <h3>Git / GitHub<br>Overleaf<br>NVivo<br>EndNote<br>Excel</h3>
         </article>
       </div>
     </section>
 
-    <section class="section tools-section">
-      <div class="section-label reveal">06 / TOOLKIT</div>
-      <div class="tools-grid reveal">
-        <div>
-          <span>STATISTICAL COMPUTING</span>
-          <h3>R / RStudio · SAS · SPSS · SQL</h3>
-        </div>
-        <div>
-          <span>MODELLING</span>
-          <h3>Regression · Cox PH · GLM/GLMM · Bayesian Methods</h3>
-        </div>
-        <div>
-          <span>RESEARCH</span>
-          <h3>Study Design · Data Management · NVivo · EndNote</h3>
-        </div>
-        <div>
-          <span>WORKFLOW</span>
-          <h3>Git / GitHub · Overleaf · Excel · Reproducible Analysis</h3>
-        </div>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section class="section contact-section" id="contact">
-      <div class="contact-glow"></div>
-      <div class="contact-inner reveal">
-        <p class="eyebrow"><span></span> LET'S CONNECT</p>
-        <h2>Have a research question<br>worth solving?</h2>
+      <div class="contact-box">
+        <p class="section-kicker">CONTACT</p>
+        <h2>Let’s work with data that matters.</h2>
         <p>
-          I’m interested in biostatistics, health-data and clinical-research opportunities where rigorous analysis can support better evidence and decisions.
+          I’m interested in biostatistics, health-data science and clinical-research
+          opportunities where rigorous analysis can support stronger evidence and better decisions.
         </p>
+
         <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:YOUR_EMAIL_HERE">Email Me <span>↗</span></a>
-          <a class="btn btn-secondary" href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-secondary" href="YOUR_GITHUB_URL" target="_blank" rel="noopener">GitHub</a>
+          <a class="button button-primary" href="mailto:YOUR_EMAIL_HERE">Email me</a>
+          <a class="button button-secondary" href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button button-secondary" href="YOUR_GITHUB_URL" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <p class="contact-note">Replace the three placeholder links in <code>index.html</code> before publishing.</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="brand">
-      <span class="brand-mark">RS</span>
-      <span class="brand-text">Raahim Salman</span>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo small">RS</span>
+        <span>Raahim Salman</span>
+      </div>
+
+      <p>Biostatistics • Health Data Science • Clinical Research</p>
+      <p>© <span id="year"></span> Raahim Salman</p>
     </div>
-    <p>Biostatistics · Health Data Science · Clinical Research</p>
-    <p>© <span id="year"></span> Raahim Salman</p>
   </footer>
 
   <script src="script.js"></script>

@@ -1,39 +1,40 @@
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.13 });
+const navLinks = [...document.querySelectorAll(".main-nav a")];
+const sections = [...document.querySelectorAll("main section[id]")];
+const menu = document.querySelector(".main-nav");
+const menuBtn = document.querySelector(".menu-btn");
 
-document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
-
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.textContent = isOpen ? "✕" : "☰";
+menuBtn.addEventListener("click", () => {
+  const open = menu.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.textContent = open ? "✕" : "☰";
 });
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
+navLinks.forEach(link => {
   link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.textContent = "☰";
+    menu.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
   });
 });
+
+const setActiveLink = () => {
+  let current = "home";
+  const y = window.scrollY + 150;
+
+  sections.forEach(section => {
+    if (section.offsetTop <= y) current = section.id;
+  });
+
+  navLinks.forEach(link => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === `#${current}`
+    );
+  });
+};
+
+window.addEventListener("scroll", setActiveLink, { passive:true });
+setActiveLink();
 
 document.getElementById("year").textContent = new Date().getFullYear();
-
-window.addEventListener("mousemove", (event) => {
-  const x = (event.clientX / window.innerWidth - 0.5) * 10;
-  const y = (event.clientY / window.innerHeight - 0.5) * 10;
-  const shell = document.querySelector(".profile-shell");
-  if (shell && window.innerWidth > 900) {
-    shell.style.transform = `translate(${x * 0.35}px, ${y * 0.35}px)`;
-  }
-});
