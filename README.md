@@ -45,3 +45,10 @@ The complete CV content remains in the website, but the first/hero page has been
 - short introductory paragraph
 - View Projects and Open CV buttons
 - four large right-side cards for publications, funded projects, tools, and languages
+
+
+## v8 update — Master's Thesis clickable page
+- The first project in the Projects section now opens a separate page: `master-thesis.html`
+- A placeholder thesis page was added with the approved structure
+- No lower-page content was removed
+- Next step: add thesis content and real thesis files
