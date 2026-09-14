@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raahim Salman — Sehatmand Khandan Project (SMK) detailed project page." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Sehatmand Khandan Project | Raahim Salman</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .project-page{
+      max-width:1318px;
+      width:calc(100% - 42px);
+      margin:62px auto 0;
+    }
+
+    .hero-card{
+      padding:40px 42px;
+      border:1px solid #c9e2f5;
+      border-radius:32px;
+      background:linear-gradient(115deg,#ffffff 0%,#fbfdff 44%,#eef8ff 100%);
+      box-shadow:0 16px 38px rgba(18,53,91,.045);
+    }
+
+    .brand-row{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:20px;
+      flex-wrap:wrap;
+    }
+
+    .brand-row img.main-logo{
+      width:110px;
+      height:110px;
+      object-fit:contain;
+      border:1px solid #d7e8f4;
+      border-radius:18px;
+      background:#fff;
+      padding:10px;
+    }
+
+    .brand-copy strong{
+      display:block;
+      color:#12355b;
+      font-size:20px;
+    }
+
+    .brand-copy span{
+      display:block;
+      margin-top:3px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    .partner-strip{
+      margin:18px 0 0;
+      border:1px solid #e4eef7;
+      border-radius:22px;
+      background:#fff;
+      padding:16px 18px;
+    }
+
+    .partner-strip p{
+      margin:0 0 12px;
+      color:#637689;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .partner-strip img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:10px;
+    }
+
+    .project-kicker{
+      margin:16px 0 12px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .hero-card h1{
+      max-width:1000px;
+      margin:0;
+      color:#12355b;
+      font-size:52px;
+      line-height:1.08;
+      letter-spacing:-.045em;
+    }
+
+    .hero-lead{
+      max-width:1020px;
+      margin:20px 0 0;
+      color:#637689;
+      font-size:18px;
+      line-height:1.75;
+    }
+
+    .project-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:27px;
+    }
+
+    .section-space{
+      margin-top:22px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:18px;
+    }
+
+    .card{
+      padding:28px 28px;
+      border:1px solid #c9e2f5;
+      border-radius:24px;
+      background:#fff;
+    }
+
+    .card h2{
+      margin:0 0 14px;
+      color:#082f5e;
+      font-size:28px;
+      letter-spacing:-.03em;
+    }
+
+    .card p,
+    .card li{
+      color:#637689;
+      font-size:16px;
+      line-height:1.72;
+    }
+
+    .card p{
+      margin:0;
+    }
+
+    .card ul{
+      margin:0;
+      padding-left:21px;
+    }
+
+    .card li{
+      margin-bottom:8px;
+    }
+
+    .fact-grid{
+      display:grid;
+      gap:8px;
+    }
+
+    .fact{
+      display:grid;
+      grid-template-columns:170px 1fr;
+      gap:14px;
+      padding:10px 0;
+      border-bottom:1px solid #e5f0f8;
+    }
+
+    .fact:last-child{border-bottom:0}
+
+    .fact strong{
+      color:#12355b;
+      font-size:14px;
+    }
+
+    .fact span{
+      color:#637689;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .role-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+
+    .role-item{
+      padding:18px 18px;
+      border:1px solid #d7e8f4;
+      border-radius:18px;
+      background:#f9fcfe;
+    }
+
+    .role-item h3{
+      margin:0 0 8px;
+      color:#12355b;
+      font-size:18px;
+    }
+
+    .role-item p{
+      margin:0;
+      color:#637689;
+      font-size:14px;
+      line-height:1.65;
+    }
+
+    .method-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    .method-card{
+      padding:20px;
+      border:1px solid #c9e2f5;
+      border-radius:20px;
+      background:#f9fcfe;
+    }
+
+    .method-card h3{
+      margin:0 0 8px;
+      color:#12355b;
+      font-size:18px;
+    }
+
+    .method-card p{
+      margin:0;
+      color:#637689;
+      font-size:14px;
+      line-height:1.65;
+    }
+
+    .tag-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:18px;
+    }
+
+    .tag{
+      padding:8px 13px;
+      border-radius:999px;
+      border:1px solid #c9e2f5;
+      background:#f8fcff;
+      color:#12355b;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+
+    .gallery figure{
+      margin:0;
+      border:1px solid #c9e2f5;
+      border-radius:22px;
+      background:#fff;
+      overflow:hidden;
+    }
+
+    .gallery img{
+      display:block;
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      background:#eef8ff;
+    }
+
+    .gallery figcaption{
+      padding:14px 16px;
+      color:#637689;
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .wide-figures{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .wide-figures figure{
+      margin:0;
+      border:1px solid #c9e2f5;
+      border-radius:22px;
+      background:#fff;
+      overflow:hidden;
+    }
+
+    .wide-figures img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+
+    .wide-figures figcaption{
+      padding:14px 16px;
+      color:#637689;
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    @media(max-width:1000px){
+      .two-col,
+      .method-grid,
+      .gallery,
+      .wide-figures,
+      .role-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:700px){
+      .hero-card h1{font-size:38px}
+      .project-page{width:calc(100% - 28px); margin-top:34px}
+      .hero-card{padding:26px 22px; border-radius:24px}
+      .gallery img{height:240px}
+      .fact{grid-template-columns:1fr; gap:4px}
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html#home" aria-label="Raahim Salman home">RS</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="main-nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#experience">Research Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#training">Courses & Certifications</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="project-page">
+  <section class="hero-card">
+    <div class="brand-row">
+      <img class="main-logo" src="assets/aku-logo.jpg" alt="The Aga Khan University logo">
+      <div class="brand-copy">
+        <strong>The Aga Khan University</strong>
+        <span>Sehatmand Khandan (SMK) Endline Research</span>
+      </div>
+    </div>
+
+    <p class="project-kicker">SEXUAL & REPRODUCTIVE HEALTH • FAMILY PLANNING • QUALITATIVE ENDLINE RESEARCH</p>
+    <h1>Sehatmand Khandan Project</h1>
+    <p class="hero-lead">
+      A qualitative endline research project focused on sexual and reproductive health (SRH) and family planning in
+      Gilgit-Baltistan, Chitral, and Sindh, Pakistan. The study explored the effectiveness of previous interventions,
+      documented community and provider perspectives, and generated evidence to guide future SRH and family-planning work.
+    </p>
+
+    <div class="project-actions">
+      <a class="button button-secondary" href="index.html#projects">Back to Projects</a>
+    </div>
+
+    <div class="partner-strip">
+      <p>Funding, implementation, and partner logos</p>
+      <img src="assets/smk-partner-logos.png" alt="Partner logos for the Sehatmand Khandan project: Canada, Aga Khan Health Service Pakistan, Aga Khan Foundation, AKRSP, and UNFPA">
+    </div>
+  </section>
+
+  <section class="two-col section-space">
+    <article class="card">
+      <h2>Project overview</h2>
+      <p>
+        The Sehatmand Khandan project aimed to strengthen understanding, access, and uptake of sexual and reproductive
+        health and family-planning services in underserved areas. The endline research examined perceptions, lived
+        experiences, barriers, and areas for future improvement after project interventions had already been introduced.
+      </p>
+      <div class="tag-list">
+        <span class="tag">SRH</span>
+        <span class="tag">Family Planning</span>
+        <span class="tag">Gender-responsive Research</span>
+        <span class="tag">Qualitative Evaluation</span>
+        <span class="tag">Community Engagement</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Study snapshot</h2>
+      <div class="fact-grid">
+        <div class="fact"><strong>Study type</strong><span>Qualitative endline research with descriptive, phenomenological, and exploratory components</span></div>
+        <div class="fact"><strong>Geographies</strong><span>Gilgit-Baltistan, Upper & Lower Chitral, and Sindh</span></div>
+        <div class="fact"><strong>Target groups</strong><span>Married men and women, adolescent girls and boys, healthcare workers, community stakeholders, and intervention beneficiaries</span></div>
+        <div class="fact"><strong>Methods</strong><span>Focus group discussions, in-depth interviews, field coordination, transcription, coding, and thematic analysis</span></div>
+        <div class="fact"><strong>Analysis</strong><span>Manual review with NVivo-supported content and thematic analysis</span></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="card section-space">
+    <h2>My role and work contributed</h2>
+    <div class="role-grid">
+      <div class="role-item">
+        <h3>Research coordination</h3>
+        <p>Supported planning, day-to-day coordination, and execution of endline research activities across the project setting.</p>
+      </div>
+      <div class="role-item">
+        <h3>Tool development & review</h3>
+        <p>Contributed to finalization and refinement of qualitative interview guides, discussion guides, and field documentation tools.</p>
+      </div>
+      <div class="role-item">
+        <h3>FGDs & in-depth interviews</h3>
+        <p>Supported and coordinated focus group discussions and in-depth interviews across different participant groups and regions.</p>
+      </div>
+      <div class="role-item">
+        <h3>Training & field preparation</h3>
+        <p>Participated in training, field-team orientation, and preparation for data collection in Gilgit-Baltistan and Chitral.</p>
+      </div>
+      <div class="role-item">
+        <h3>Data management & qualitative analysis</h3>
+        <p>Contributed to organization of field data, translation/transcription processes, quality checks, coding, and analysis using NVivo-supported workflows.</p>
+      </div>
+      <div class="role-item">
+        <h3>Reporting & evidence generation</h3>
+        <p>Helped translate field evidence into actionable findings and documentation for future SRH/FP programming and decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card section-space">
+    <h2>Study design, focus groups, and in-depth interviews</h2>
+    <div class="method-grid">
+      <div class="method-card">
+        <h3>Focus group discussions</h3>
+        <p>FGDs were used to understand community perceptions, social norms, and experiences among married men, married women, adolescent boys, and adolescent girls.</p>
+      </div>
+      <div class="method-card">
+        <h3>In-depth interviews</h3>
+        <p>IDIs captured richer individual perspectives from healthcare providers, project staff, community-level actors, religious scholars, mobilizers, and intervention beneficiaries.</p>
+      </div>
+      <div class="method-card">
+        <h3>Qualitative analysis</h3>
+        <p>Data were translated and transcribed into English, reviewed repeatedly, coded for meaning, and analyzed thematically to derive key themes and recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-col section-space">
+    <article class="card">
+      <h2>Program areas and target districts</h2>
+      <p>
+        The study covered selected districts in Gilgit-Baltistan, Chitral, and Sindh, including Ghizer, Gilgit, Hunza,
+        Nagar, Astore, Diamer, Skardu, Ghanche, Kharmang, Shigar, Upper Chitral, Lower Chitral, Badin, and Matiari.
+      </p>
+      <div class="tag-list">
+        <span class="tag">Gilgit</span>
+        <span class="tag">Ghizer</span>
+        <span class="tag">Hunza</span>
+        <span class="tag">Nagar</span>
+        <span class="tag">Astore</span>
+        <span class="tag">Diamer</span>
+        <span class="tag">Skardu</span>
+        <span class="tag">Ghanche</span>
+        <span class="tag">Kharmang</span>
+        <span class="tag">Shigar</span>
+        <span class="tag">Upper Chitral</span>
+        <span class="tag">Lower Chitral</span>
+        <span class="tag">Badin</span>
+        <span class="tag">Matiari</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Key project goals</h2>
+      <ul>
+        <li>Evaluate improvement in understanding of SRH and family planning among women, men, adolescents, and youth.</li>
+        <li>Assess empowerment and reproductive rights awareness without coercion, discrimination, or violence.</li>
+        <li>Review the effectiveness of interventions and identify what should be sustained, adapted, or scaled.</li>
+        <li>Generate evidence to support future programming, strategy refinement, and policy dialogue.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="card section-space">
+    <h2>Fieldwork and team moments</h2>
+    <div class="gallery">
+      <figure>
+        <img src="assets/smk-photo-1.jpg" alt="Project discussion meeting for the Sehatmand Khandan project">
+        <figcaption>Project discussion and coordination meeting during SMK research activities.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/smk-photo-2.jpg" alt="Field coordination meeting during the Sehatmand Khandan project">
+        <figcaption>Field coordination and stakeholder discussion in a project setting connected with regional implementation.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/smk-photo-3.jpg" alt="Planning or debrief meeting in the Sehatmand Khandan project">
+        <figcaption>Debriefing and planning conversation linked to qualitative research implementation.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/smk-photo-4.jpg" alt="Roundtable project meeting for the Sehatmand Khandan project">
+        <figcaption>Team meeting supporting qualitative fieldwork, coordination, and project decision-making.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card section-space">
+    <h2>Training and tool finalization</h2>
+    <p>
+      The project also involved training, team-building, and tool-finalization sessions to prepare field staff and
+      strengthen the quality of qualitative data collection across regions.
+    </p>
+    <div class="wide-figures" style="margin-top:18px;">
+      <figure>
+        <img src="assets/smk-training-gb.jpg" alt="Training and tool finalization in Gilgit-Baltistan">
+        <figcaption>Training and tool finalization in Gilgit-Baltistan (August 2023).</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/smk-training-chitral.jpg" alt="Training and tool finalization in Chitral">
+        <figcaption>Training and tool finalization in Chitral (August 2023).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card section-space" style="margin-bottom:72px;">
+    <h2>Why this project matters</h2>
+    <p>
+      The project generated practical evidence on how SRH and family-planning interventions are experienced at the
+      community level. It supported understanding of awareness, access barriers, service utilization, and community
+      attitudes, while helping identify what works, what should be improved, and what can be scaled in future programs.
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo small">RS</span><span>Raahim Salman</span></div>
+    <p>Biostatistics • Health Data Analysis • Clinical Research</p>
+    <p>© <span id="year"></span> Raahim Salman</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
