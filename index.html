@@ -55,6 +55,35 @@
     }
   </style>
 
+
+  <style>
+    .experience-card-link{
+      color:inherit;
+      text-decoration:none;
+      cursor:pointer;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .experience-card-link:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 28px rgba(18,53,91,.08);
+      border-color:#a9d2ef;
+    }
+    .experience-card-link h3{transition:color .18s ease}
+    .experience-card-link:hover h3{color:#3f86c2}
+    .experience-doc-hint{
+      display:inline-flex;
+      align-items:center;
+      margin-top:12px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid #c9e2f5;
+      background:#f8fcff;
+      color:#12355b;
+      font-size:12px;
+      font-weight:800;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -92,7 +121,7 @@
 
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View Projects</a>
-          <a class="button button-secondary" href="assets/Raahim_Salman_Biostatistics_CV.docx" target="_blank">Open CV</a>
+          <a class="button button-secondary" href="assets/Raahim_Salman_Biostatistics_CV.pdf" target="_blank" rel="noopener">Open CV</a>
         </div>
       </div>
 
@@ -317,7 +346,7 @@
     </div>
 
     <div class="experience-list">
-      <article class="experience-card">
+      <a class="experience-card experience-card-link" href="senior-research-assistant.html" aria-label="Open Senior Research Assistant experience documents">
         <div class="experience-label">FEB 2024 — JUN 2024</div>
         <div>
           <h3>Senior Research Assistant — Clinical & Public Health Research</h3>
@@ -328,8 +357,9 @@
             <li>Contributed to grant proposals, concept notes, pilot-study activities, and manuscript development, including qualitative research on perceptions of child abuse among teachers in Pakistan.</li>
             <li>Coordinated and delivered a five-day field training program for healthcare providers on disaster preparedness and response, supporting participant training, evaluation, and research-related activities.</li>
           </ul>
+          <span class="experience-doc-hint">View experience & recommendation letters →</span>
         </div>
-      </article>
+      </a>
 
       <article class="experience-card">
         <div class="experience-label">AUG 2023 — DEC 2023</div>
