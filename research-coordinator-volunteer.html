@@ -13,84 +13,169 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    .experience-page{
-      max-width:1100px;
+    /* IMPORTANT: all classes are unique to this page so they do not
+       inherit the homepage .hero / .hero h1 layout. */
+    .volunteer-page {
+      max-width:1180px;
       width:calc(100% - 42px);
-      margin:62px auto 72px;
+      margin:58px auto 72px;
     }
-    .hero{
-      padding:42px;
+
+    .volunteer-hero {
+      padding:42px 44px;
       border:1px solid #c9e2f5;
       border-radius:32px;
-      background:linear-gradient(115deg,#ffffff 0%,#fbfdff 45%,#eef8ff 100%);
+      background:linear-gradient(115deg,#ffffff 0%,#fbfdff 48%,#eef8ff 100%);
       box-shadow:0 16px 38px rgba(18,53,91,.045);
     }
-    .kicker{
-      margin:0 0 12px;
+
+    .volunteer-brand {
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:25px;
+    }
+
+    .volunteer-brand img {
+      width:88px;
+      height:88px;
+      object-fit:contain;
+      padding:8px;
+      background:#fff;
+      border:1px solid #d7e8f4;
+      border-radius:17px;
+    }
+
+    .volunteer-brand strong {
+      display:block;
+      color:#12355b;
+      font-size:20px;
+      line-height:1.3;
+    }
+
+    .volunteer-brand span {
+      display:block;
+      margin-top:4px;
+      color:#4c8fc7;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+    }
+
+    .volunteer-kicker {
+      margin:0 0 11px;
       color:#4c8fc7;
       font-size:13px;
       font-weight:800;
       letter-spacing:.14em;
       text-transform:uppercase;
     }
-    .hero h1{
+
+    .volunteer-title {
+      max-width:850px;
       margin:0;
       color:#12355b;
       font-size:48px;
       line-height:1.08;
       letter-spacing:-.045em;
     }
-    .org{
-      margin:13px 0 0;
+
+    .volunteer-org {
+      margin:12px 0 0;
       color:#4c8fc7;
       font-size:20px;
       font-weight:700;
       line-height:1.4;
     }
-    .lead{
+
+    .volunteer-lead {
       max-width:900px;
-      margin:22px 0 0;
+      margin:21px 0 0;
       color:#637689;
       font-size:17px;
       line-height:1.75;
     }
-    .actions{
+
+    .volunteer-actions {
       display:flex;
       flex-wrap:wrap;
       gap:12px;
-      margin-top:26px;
+      margin-top:27px;
     }
-    .grid{
+
+    .volunteer-content-grid {
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:18px;
       margin-top:22px;
     }
-    .card{
+
+    .volunteer-card {
       padding:27px 28px;
       border:1px solid #c9e2f5;
       border-radius:24px;
       background:#fff;
     }
-    .card h2{
+
+    .volunteer-card h2 {
       margin:0 0 13px;
       color:#082f5e;
       font-size:27px;
+      line-height:1.25;
       letter-spacing:-.03em;
     }
-    .card p,.card li{
+
+    .volunteer-card ul {
+      margin:0;
+      padding-left:20px;
+    }
+
+    .volunteer-card li {
+      margin-bottom:8px;
+      color:#637689;
+      font-size:15px;
+      line-height:1.7;
+    }
+
+    .volunteer-document {
+      margin-top:18px;
+      padding:27px 28px;
+      border:1px solid #c9e2f5;
+      border-radius:24px;
+      background:linear-gradient(120deg,#f9fcfe,#eef8ff);
+    }
+
+    .volunteer-document-label {
+      margin:0 0 8px;
+      color:#4c8fc7;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.11em;
+      text-transform:uppercase;
+    }
+
+    .volunteer-document h2 {
+      margin:0 0 10px;
+      color:#082f5e;
+      font-size:27px;
+    }
+
+    .volunteer-document p {
+      max-width:880px;
+      margin:0;
       color:#637689;
       font-size:15px;
       line-height:1.72;
     }
-    .card ul{
-      margin:0;
-      padding-left:20px;
+
+    .volunteer-document .button {
+      margin-top:18px;
     }
-    .card li{margin-bottom:8px}
-    .note{
-      margin-top:20px;
-      padding:18px 20px;
+
+    .volunteer-note {
+      margin-top:18px;
+      padding:17px 20px;
       border:1px solid #d7e8f4;
       border-radius:18px;
       background:#f8fcff;
@@ -98,14 +183,44 @@
       font-size:13px;
       line-height:1.65;
     }
-    @media(max-width:800px){
-      .grid{grid-template-columns:1fr}
-      .hero h1{font-size:36px}
+
+    @media(max-width:800px) {
+      .volunteer-content-grid {
+        grid-template-columns:1fr;
+      }
+
+      .volunteer-title {
+        font-size:37px;
+      }
     }
-    @media(max-width:560px){
-      .experience-page{width:calc(100% - 28px);margin-top:34px}
-      .hero{padding:28px 22px;border-radius:24px}
-      .hero h1{font-size:31px}
+
+    @media(max-width:560px) {
+      .volunteer-page {
+        width:calc(100% - 28px);
+        margin-top:32px;
+      }
+
+      .volunteer-hero {
+        padding:28px 22px;
+        border-radius:24px;
+      }
+
+      .volunteer-brand {
+        align-items:flex-start;
+      }
+
+      .volunteer-brand img {
+        width:72px;
+        height:72px;
+      }
+
+      .volunteer-title {
+        font-size:31px;
+      }
+
+      .volunteer-lead {
+        font-size:16px;
+      }
     }
   </style>
 </head>
@@ -115,6 +230,7 @@
   <div class="nav-wrap">
     <a class="logo" href="index.html#home" aria-label="Raahim Salman home">RS</a>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+
     <nav class="main-nav">
       <a href="index.html#home">Home</a>
       <a href="index.html#projects">Projects</a>
@@ -127,61 +243,96 @@
   </div>
 </header>
 
-<main class="experience-page">
-  <section class="hero">
-    <p class="kicker">RESEARCH EXPERIENCE • PROFESSIONAL VERIFICATION</p>
-    <h1>Research Coordinator — Volunteer</h1>
-    <p class="org">Aga Khan University • School of Nursing & Midwifery</p>
+<main class="volunteer-page">
 
-    <p class="lead">
-      I joined Aga Khan University in April 2022 and contributed to multiple health-research projects during
-      the volunteer/intern phase of my research career. My work included research planning, literature review,
-      mixed-method data collection, manuscript writing, quantitative analysis, qualitative research,
-      field training, and coordination of interviews and focus group discussions.
+  <section class="volunteer-hero">
+    <div class="volunteer-brand">
+      <img src="assets/aku-logo.jpg" alt="The Aga Khan University logo" />
+      <div>
+        <strong>The Aga Khan University</strong>
+        <span>School of Nursing & Midwifery</span>
+      </div>
+    </div>
+
+    <p class="volunteer-kicker">RESEARCH EXPERIENCE • PROFESSIONAL VERIFICATION</p>
+
+    <h1 class="volunteer-title">Research Coordinator — Volunteer</h1>
+
+    <p class="volunteer-org">Aga Khan University • Karachi, Pakistan</p>
+
+    <p class="volunteer-lead">
+      I joined Aga Khan University in April 2022 and contributed to multiple health-research projects
+      during the volunteer/intern phase of my research career. My work included literature review,
+      mixed-method data collection, manuscript development, quantitative and qualitative research,
+      field training, reporting, and coordination of interviews and focus group discussions.
     </p>
 
-    <div class="actions">
+    <div class="volunteer-actions">
       <a class="button button-primary"
          href="assets/Raahim_Salman_AKU_Research_Work_Experience_Letter.pdf"
-         target="_blank" rel="noopener">View Work Experience Letter</a>
-      <a class="button button-secondary" href="fall-prevention.html">Open Fall Prevention Project</a>
-      <a class="button button-secondary" href="index.html#experience">Back to Experience</a>
+         target="_blank"
+         rel="noopener">View Work Experience Letter</a>
+
+      <a class="button button-secondary"
+         href="fall-prevention.html">Open Fall Prevention Project</a>
+
+      <a class="button button-secondary"
+         href="index.html#experience">Back to Experience</a>
     </div>
   </section>
 
-  <section class="grid">
-    <article class="card">
+  <section class="volunteer-content-grid">
+    <article class="volunteer-card">
       <h2>Volunteer / intern phase</h2>
       <ul>
-        <li>Joined AKU in April 2022 and contributed to research activities before transitioning to a full-time Research Coordinator role in August 2023.</li>
-        <li>Supported literature reviews, manuscript writing, research questions, and study planning.</li>
+        <li>Joined Aga Khan University in April 2022 and contributed to health-research activities before transitioning to a full-time Research Coordinator role.</li>
+        <li>Supported literature reviews, manuscript writing, research questions, study planning, and research documentation.</li>
         <li>Contributed to mixed-method research involving quantitative and qualitative data collection and analysis.</li>
-        <li>Supported project reports, presentations, documentation, and research-team coordination.</li>
+        <li>Supported reports, presentations, project documentation, and research-team coordination.</li>
       </ul>
     </article>
 
-    <article class="card">
+    <article class="volunteer-card">
       <h2>Experience confirmed by AKU</h2>
       <ul>
         <li>Conducted a three-day field training program.</li>
         <li>Collaborated on research inquiries and project activities.</li>
-        <li>Oversaw data-collection processes involving interviews and focus group discussions across multiple districts.</li>
+        <li>Oversaw data collection involving interviews and focus group discussions across multiple districts.</li>
         <li>Contributed to literature reviews, manuscript writing, quantitative statistical analysis, and qualitative studies.</li>
         <li>Recognized for professionalism and effective project-management skills.</li>
       </ul>
     </article>
   </section>
 
-  <div class="note">
-    The official AKU letter covers the complete research period from April 2022 to December 2023.
-    In this portfolio, April 2022–July 2023 is shown as the volunteer/intern phase, followed by the
-    full-time Research Coordinator role beginning in August 2023.
+  <section class="volunteer-document">
+    <p class="volunteer-document-label">OFFICIAL PROFESSIONAL DOCUMENT</p>
+    <h2>AKU Work Experience Letter</h2>
+    <p>
+      The official Aga Khan University letter confirms the complete research period from April 2022 to
+      December 2023, including the initial intern/research phase and the later transition to full-time
+      Research Coordinator.
+    </p>
+
+    <a class="button button-primary"
+       href="assets/Raahim_Salman_AKU_Research_Work_Experience_Letter.pdf"
+       target="_blank"
+       rel="noopener">Open PDF</a>
+  </section>
+
+  <div class="volunteer-note">
+    Portfolio timeline: April 2022–July 2023 is presented as the volunteer/intern research phase.
+    The later full-time Research Coordinator position beginning in August 2023 is shown separately
+    in the Sehatmand Khandan experience section.
   </div>
+
 </main>
 
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-brand"><span class="logo small">RS</span><span>Raahim Salman</span></div>
+    <div class="footer-brand">
+      <span class="logo small">RS</span>
+      <span>Raahim Salman</span>
+    </div>
     <p>Biostatistics • Health Data Analysis • Clinical Research</p>
     <p>© <span id="year"></span> Raahim Salman</p>
   </div>
